@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Heights Muffler Shop | Houston's Honest Exhaust Experts</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        .sticky-nav {
+            transition: all 0.3s ease;
+        }
+
+        .sticky-nav.scrolled {
+            padding-top: 0.75rem;
+            padding-bottom: 0.75rem;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+        }
+    </style>
+</head>
+<body class="bg-white text-slate-900">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 sticky-nav py-5 px-6">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <div class="bg-red-600 p-2 rounded shadow-md">
+                    <i class="fa-solid fa-wrench text-white text-xl"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="font-black text-lg md:text-xl leading-none tracking-tight uppercase text-slate-900">The Heights</span>
+                    <span class="font-bold text-[10px] md:text-xs text-red-600 tracking-widest leading-none uppercase">Muffler Shop</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="hidden lg:flex gap-8 mr-8 font-bold text-xs uppercase tracking-widest text-slate-600">
+                    <a href="#services" class="hover:text-red-600 transition-colors">Services</a>
+                    <a href="#about" class="hover:text-red-600 transition-colors">About</a>
+                    <a href="#reviews" class="hover:text-red-600 transition-colors">Reviews</a>
+                    <a href="#contact" class="hover:text-red-600 transition-colors">Estimate</a>
+                </div>
+                <a href="tel:7138611222" class="bg-blue-900 text-white px-4 md:px-6 py-2.5 rounded-full font-black text-xs md:text-sm flex items-center gap-2 hover:bg-red-600 transition-all shadow-md active:scale-95">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="hidden sm:inline">(713) 861-1222</span>
+                    <span class="sm:hidden text-[10px]">CALL NOW</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-900/5 -skew-x-12 translate-x-20"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-1.5 rounded-full shadow-sm mb-6">
+                    <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
+                    <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">Top Rated Local Family Shop</span>
+                </div>
+                <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8 text-slate-900">
+                    Reliable Care. <br />
+                    <span class="text-red-600 italic">Honest Folks.</span>
+                </h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
+                    We’re a neighborhood shop that treats your car like our own. Specialist exhaust work, inspections, and brakes at prices that beat the big dealers.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-red-600 text-white text-center px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-600/20 uppercase tracking-tight">
+                        Get Free Estimate
+                    </a>
+                    <div class="flex items-center gap-4 px-6 py-4 bg-white rounded-xl border border-slate-200 shadow-sm">
+                        <div class="bg-blue-100 p-2 rounded-lg text-blue-900"><i class="fa-solid fa-clock text-xl"></i></div>
+                        <div>
+                            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-widest leading-none">Inspections</p>
+                            <p class="font-black text-slate-900 leading-none mt-1">Under 15 Mins</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee -->
+    <div class="bg-slate-900 text-white py-4 marquee-container">
+        <div class="marquee-content flex gap-12 font-bold text-sm tracking-widest uppercase items-center">
+            <span><i class="fa-solid fa-coffee text-red-500 mr-2"></i> Free Coffee & WiFi</span>
+            <span><i class="fa-solid fa-shield-halved text-red-500 mr-2"></i> Texas Certified Inspections</span>
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Honest Pricing</span>
+            <span><i class="fa-solid fa-heart text-red-500 mr-2"></i> Family Owned</span>
+            <span><i class="fa-solid fa-coffee text-red-500 mr-2"></i> Free Coffee & WiFi</span>
+            <span><i class="fa-solid fa-shield-halved text-red-500 mr-2"></i> Texas Certified Inspections</span>
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Honest Pricing</span>
+            <span><i class="fa-solid fa-heart text-red-500 mr-2"></i> Family Owned</span>
+        </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid lg:grid-cols-4 gap-8">
+                <div class="lg:col-span-1">
+                    <h2 class="text-4xl font-black tracking-tight mb-4 uppercase leading-none">What We <br/><span class="text-red-600 italic">Offer</span></h2>
+                    <p class="text-slate-500 font-medium mb-8">Professional auto care with the equipment of a dealer and the heart of a local shop.</p>
+                </div>
+                <div class="lg:col-span-3 grid md:grid-cols-2 gap-6">
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
+                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
+                            <i class="fa-solid fa-gear text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Exhaust & Mufflers</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Custom welding, catalytic converters, and performance pipe bending.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
+                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
+                            <i class="fa-solid fa-clipboard-check text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">State Inspections</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Official Emissions & Safety inspections. No appointment needed.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
+                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
+                            <i class="fa-solid fa-car-burst text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Brakes & Maintenance</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">Full brake service and synthetic oil changes starting at dealer-beating rates.</p>
+                    </div>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
+                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
+                            <i class="fa-solid fa-magnifying-glass text-3xl text-red-600"></i>
+                        </div>
+                        <h3 class="text-xl font-black mb-3 tracking-tight">Honest Diagnostics</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed">We show you the issue before we fix it. If we don't find a problem, we'll tell you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section id="about" class="py-24 bg-blue-900 text-white rounded-[40px] md:rounded-[60px] mx-4 my-12 overflow-hidden relative">
+        <div class="max-w-7xl mx-auto px-8 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-5xl font-black tracking-tight mb-8 uppercase italic leading-none">The Neighborhood <br/><span class="text-red-500">Choice.</span></h2>
+                <div class="space-y-8">
+                    <div class="flex gap-6">
+                        <div class="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-black text-red-500 text-xl italic">01</div>
+                        <div>
+                            <h4 className="text-xl font-bold mb-2">Miguel & Ruben</h4>
+                            <p className="text-blue-100/70 leading-relaxed font-medium">We're independent. That means we answer to you, not a corporate headquarters. We build our business on your repeat trust.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-black text-red-500 text-xl italic">02</div>
+                        <div>
+                            <h4 className="text-xl font-bold mb-2">No Mystery Fees</h4>
+                            <p className="text-blue-100/70 leading-relaxed font-medium">We give you a straight quote. If the scope changes, we call you first. No surprises when you get your keys back.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="aspect-square bg-white rounded-[40px] overflow-hidden shadow-2xl">
+                    <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tight mb-4 uppercase">Customer Voices</h2>
+                <div class="flex justify-center gap-1 text-yellow-500 mb-2">
+                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                </div>
+                <p class="text-slate-400 font-bold text-xs uppercase tracking-[0.3em]">4.9 Stars • Over 130 Verified Reviews</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 leading-relaxed font-medium">"Best mechanic shop I've been to, they're super honest and nice!! Heights Muffler said no leak was found after another shop told me I had an engine leak."</p>
+                    <p class="font-black text-blue-900 tracking-tighter uppercase">— Phoebe Mateos</p>
+                </div>
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 leading-relaxed font-medium">"Chopped out a previous owner's exhaust and welded a new stock one in for me in 15 minutes at a very reasonable price."</p>
+                    <p class="font-black text-blue-900 tracking-tighter uppercase">— Tanner Bowersox</p>
+                </div>
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 leading-relaxed font-medium">"Got heart-shaped exhaust tips welded on... the welds look clean, the placement is perfect, and the price was better than expected."</p>
+                    <p class="font-black text-blue-900 tracking-tighter uppercase">— Faith Mayorga</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
+            <div class="bg-slate-50 p-10 rounded-[40px] border border-slate-200 shadow-inner">
+                <h3 class="text-3xl font-black mb-2 uppercase tracking-tight">Quick Estimate</h3>
+                <p class="text-slate-500 mb-8 font-medium italic">Miguel & Ruben typically reply within the hour.</p>
+                <form id="estimateForm" class="space-y-4">
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <input type="text" placeholder="Your Name" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
+                        <input type="tel" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
+                    </div>
+                    <input type="text" placeholder="Car Make & Model" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
+                    <textarea placeholder="Tell us what you need..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold"></textarea>
+                    <button type="submit" class="w-full bg-red-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-red-700 transition-all uppercase tracking-tight">
+                        Send Message
+                    </button>
+                    <p id="formFeedback" class="text-center text-green-600 font-bold hidden">Message sent! We'll call you soon.</p>
+                </form>
+            </div>
+
+            <div class="flex flex-col">
+                <div class="bg-blue-900 text-white p-10 rounded-[40px] flex-grow shadow-2xl">
+                    <h3 class="text-3xl font-black mb-8 uppercase tracking-tight">The Shop</h3>
+                    <div class="space-y-8">
+                        <div class="flex gap-6">
+                            <i class="fa-solid fa-location-dot text-red-500 text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-xl uppercase tracking-tighter">Houston Heights</p>
+                                <p class="text-blue-100/60 font-medium">9889 Bellaire Blvd Suite E-205<br/>Houston, TX 77036</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-6">
+                            <i class="fa-solid fa-clock text-red-500 text-2xl mt-1"></i>
+                            <div>
+                                <p class="font-bold text-xl uppercase tracking-tighter">Hours</p>
+                                <p class="text-blue-100/60 font-medium italic">Mon-Fri: 8:00 AM – 5:00 PM</p>
+                                <p class="text-blue-100/60 font-medium italic">Sat: 8:00 AM – 1:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 bg-slate-200 rounded-[40px] h-48 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer border border-slate-300">
+                    <div class="text-center">
+                        <i class="fa-solid fa-map-location-dot text-slate-400 text-4xl mb-2"></i>
+                        <p class="font-black text-slate-500 text-xs uppercase tracking-widest">Open in Google Maps</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white py-12 border-t border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-3 opacity-30">
+                <i class="fa-solid fa-wrench"></i>
+                <span class="font-black text-sm tracking-tighter uppercase leading-none">The Heights Muffler Shop</span>
+            </div>
+            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">
+                &copy; 2024 LOCAL INDEPENDENT BUSINESS. HOUSTON, TX.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Floating Call Button -->
+    <a href="tel:7138611222" class="fixed bottom-6 right-6 bg-red-600 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-2xl md:hidden z-50">
+        <i class="fa-solid fa-phone text-2xl"></i>
+    </a>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const nav = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+
+        // Simple Form Submission Simulation
+        document.getElementById('estimateForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const feedback = document.getElementById('formFeedback');
+            const btn = e.target.querySelector('button');
+            
+            btn.innerHTML = "Sending...";
+            btn.disabled = true;
+
+            setTimeout(() => {
+                feedback.classList.remove('hidden');
+                btn.innerHTML = "Sent!";
+                e.target.reset();
+            }, 1000);
+        });
+    </script>
+</body>
+</html>
+
