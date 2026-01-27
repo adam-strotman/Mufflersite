@@ -3,7 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Heights Muffler Shop | Houston's Honest Exhaust Experts</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>The Heights Muffler Shop | Houston's Honest Exhaust & Inspection Experts</title>
+    <meta name="description" content="Top-rated muffler shop in Houston Heights. Specialized in exhaust repair, custom welding, and Texas State Inspections. Honest, family-owned service since 2024.">
+    <meta name="keywords" content="muffler shop Houston, exhaust repair Heights Houston, state inspections Houston, custom exhaust welding, brake service Houston">
+    
+    <!-- Local Business Schema (The SEO Secret Sauce) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "The Heights Muffler Shop",
+      "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98",
+      "@id": "",
+      "url": "https://theheightsmufflershop.netlify.app",
+      "telephone": "+1-713-861-1222",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "9889 Bellaire Blvd Suite E-205",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77036",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.7058,
+        "longitude": -95.5518
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "130"
+      }
+    }
+    </script>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -92,7 +142,7 @@
                     <span class="text-red-600 italic">Honest Folks.</span>
                 </h1>
                 <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
-                    We’re a neighborhood shop that treats your car like our own. Specialist exhaust work, inspections, and brakes at prices that beat the big dealers.
+                    Houston's neighborhood specialist for high-performance exhaust work, certified inspections, and reliable brakes at local prices.
                 </p>
                 <div class="flex flex-col sm:flex-row gap-4">
                     <a href="#contact" class="bg-red-600 text-white text-center px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-600/20 uppercase tracking-tight">
@@ -175,15 +225,15 @@
                     <div class="flex gap-6">
                         <div class="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-black text-red-500 text-xl italic">01</div>
                         <div>
-                            <h4 className="text-xl font-bold mb-2">Miguel & Ruben</h4>
-                            <p className="text-blue-100/70 leading-relaxed font-medium">We're independent. That means we answer to you, not a corporate headquarters. We build our business on your repeat trust.</p>
+                            <h4 class="text-xl font-bold mb-2">Locally Owned</h4>
+                            <p class="text-blue-100/70 leading-relaxed font-medium">We're independent. That means we answer to you, not a corporate headquarters. We build our business on your repeat trust.</p>
                         </div>
                     </div>
                     <div class="flex gap-6">
                         <div class="shrink-0 w-12 h-12 bg-white/10 rounded-2xl flex items-center justify-center font-black text-red-500 text-xl italic">02</div>
                         <div>
-                            <h4 className="text-xl font-bold mb-2">No Mystery Fees</h4>
-                            <p className="text-blue-100/70 leading-relaxed font-medium">We give you a straight quote. If the scope changes, we call you first. No surprises when you get your keys back.</p>
+                            <h4 class="text-xl font-bold mb-2">No Mystery Fees</h4>
+                            <p class="text-blue-100/70 leading-relaxed font-medium">We give you a straight quote. If the scope changes, we call you first. No surprises when you get your keys back.</p>
                         </div>
                     </div>
                 </div>
@@ -264,11 +314,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-6 bg-slate-200 rounded-[40px] h-48 flex items-center justify-center grayscale hover:grayscale-0 transition-all cursor-pointer border border-slate-300">
-                    <div class="text-center">
-                        <i class="fa-solid fa-map-location-dot text-slate-400 text-4xl mb-2"></i>
-                        <p class="font-black text-slate-500 text-xs uppercase tracking-widest">Open in Google Maps</p>
-                    </div>
+                <!-- Google Maps Embed for SEO -->
+                <div class="mt-6 rounded-[40px] overflow-hidden border border-slate-300 h-48 grayscale hover:grayscale-0 transition-all">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.com/maps?q=9889%20Bellaire%20Blvd%20Suite%20E-205%20Houston%20TX%2077036&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
                 </div>
             </div>
         </div>
