@@ -5,7 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>The Heights Muffler Shop | Houston's Honest Exhaust & Inspection Experts</title>
-    <meta name="description" content="Top-rated muffler shop at 742 W 18th St, Houston Heights. Specialized in exhaust repair, custom welding, and Texas State Inspections. Honest, family-owned service.">
+    <meta name="description" content="Top-rated locally owned muffler shop at 742 W 18th St, Houston Heights. Specialist in exhaust repair, custom welding, and Texas State Inspections. No mystery fees.">
+    <meta name="keywords" content="muffler shop Houston Heights, exhaust repair 77008, state inspections Houston 77008, custom exhaust welding, brake service Houston Heights">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "The Heights Muffler Shop",
+      "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98",
+      "url": "https://theheightsmufflershop.netlify.app",
+      "telephone": "+1-713-861-1222",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "742 W 18th St",
+        "addressLocality": "Houston",
+        "addressRegion": "TX",
+        "postalCode": "77008",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 29.8028,
+        "longitude": -95.4057
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "13:00"
+        }
+      ]
+    }
+    </script>
     
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -25,9 +65,9 @@
     <nav id="navbar" class="fixed top-0 w-full z-50 sticky-nav py-5 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="bg-red-600 p-2 rounded shadow-md"><i class="fa-solid fa-wrench text-white text-xl"></i></div>
+                <div class="bg-red-600 p-2 rounded shadow-md" aria-hidden="true"><i class="fa-solid fa-wrench text-white text-xl"></i></div>
                 <div class="flex flex-col">
-                    <span class="font-black text-lg md:text-xl leading-none tracking-tight uppercase">The Heights</span>
+                    <span class="font-black text-lg md:text-xl leading-none uppercase">The Heights</span>
                     <span class="font-bold text-[10px] md:text-xs text-red-600 tracking-widest leading-none uppercase">Muffler Shop</span>
                 </div>
             </div>
@@ -35,7 +75,6 @@
                 <div class="hidden lg:flex gap-8 mr-8 font-bold text-xs uppercase tracking-widest text-slate-600">
                     <a href="#services" class="hover:text-red-600 transition-colors">Services</a>
                     <a href="#about" class="hover:text-red-600 transition-colors">About</a>
-                    <a href="#reviews" class="hover:text-red-600 transition-colors">Reviews</a>
                     <a href="#contact" class="hover:text-red-600 transition-colors">Estimate</a>
                 </div>
                 <a href="tel:7138611222" class="bg-blue-900 text-white px-6 py-2.5 rounded-full font-black text-sm flex items-center gap-2 hover:bg-red-600 transition-all shadow-md">
@@ -45,22 +84,26 @@
         </div>
     </nav>
 
-    <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
+    <header class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="max-w-3xl">
+                <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-1.5 rounded-full shadow-sm mb-6">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">Locally Owned & Operated in Houston</span>
+                </div>
                 <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8">Reliable Care. <br /><span class="text-red-600 italic">Honest Folks.</span></h1>
-                <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">Neighborhood specialists for custom exhaust, certified inspections, and honest auto repair on W 18th St.</p>
-                <a href="#contact" class="bg-red-600 text-white px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all uppercase">Get Free Estimate</a>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">Located on W 18th St, we are your neighborhood specialist for custom exhaust and Texas state inspections.</p>
+                <a href="#contact" class="bg-red-600 text-white px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all uppercase shadow-lg shadow-red-600/20">Get Free Estimate</a>
             </div>
         </div>
-    </section>
+    </header>
 
     <div class="bg-slate-900 text-white py-4 marquee-container">
         <div class="marquee-content flex gap-12 font-bold text-sm uppercase items-center">
-            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Texas Certified Inspections</span>
-            <span><i class="fa-solid fa-heart text-red-500 mr-2"></i> Family Owned</span>
-            <span><i class="fa-solid fa-wrench text-red-500 mr-2"></i> Custom Welding</span>
-            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Texas Certified Inspections</span>
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> No Mystery Fees</span>
+            <span><i class="fa-solid fa-heart text-red-500 mr-2"></i> Locally Owned</span>
+            <span><i class="fa-solid fa-shield-halved text-red-500 mr-2"></i> Texas Certified Inspections</span>
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> No Mystery Fees</span>
         </div>
     </div>
 
@@ -68,28 +111,28 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-4 gap-8">
                 <div class="lg:col-span-1">
-                    <h2 class="text-4xl font-black tracking-tight mb-4 uppercase leading-none">What We <br/><span class="text-red-600 italic">Offer</span></h2>
+                    <h2 class="text-4xl font-black tracking-tight mb-4 uppercase leading-none">Services <br/><span class="text-red-600 italic">Provided</span></h2>
                 </div>
                 <div class="lg:col-span-3 grid md:grid-cols-2 gap-6">
                     <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
                         <i class="fa-solid fa-gear text-3xl text-red-600 mb-6 block"></i>
-                        <h3 class="text-xl font-black mb-3">Exhaust & Mufflers</h3>
-                        <p class="text-slate-500 text-sm">Custom welding, catalytic converters, and performance pipe bending.</p>
+                        <h3 class="text-xl font-black mb-3 uppercase tracking-tight">Exhaust & Mufflers</h3>
+                        <p class="text-slate-500 text-sm">Custom welding, catalytic converters, and performance pipe bending in the Heights.</p>
                     </div>
                     <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
                         <i class="fa-solid fa-clipboard-check text-3xl text-red-600 mb-6 block"></i>
-                        <h3 class="text-xl font-black mb-3">State Inspections</h3>
-                        <p class="text-slate-500 text-sm">Official Emissions & Safety inspections. No appointment needed.</p>
+                        <h3 class="text-xl font-black mb-3 uppercase tracking-tight">State Inspections</h3>
+                        <p class="text-slate-500 text-sm">Official Texas Emissions & Safety inspections. Drive-in service available.</p>
                     </div>
                     <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
                         <i class="fa-solid fa-car-burst text-3xl text-red-600 mb-6 block"></i>
-                        <h3 class="text-xl font-black mb-3">Brakes & Maintenance</h3>
-                        <p class="text-slate-500 text-sm">Full brake service and synthetic oil changes at fair rates.</p>
+                        <h3 class="text-xl font-black mb-3 uppercase tracking-tight">Brakes & Maintenance</h3>
+                        <p class="text-slate-500 text-sm">Full brake service and synthetic oil changes at fair, transparent rates.</p>
                     </div>
                     <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
                         <i class="fa-solid fa-magnifying-glass text-3xl text-red-600 mb-6 block"></i>
-                        <h3 class="text-xl font-black mb-3">Honest Diagnostics</h3>
-                        <p class="text-slate-500 text-sm">We show you the issue before we fix it. No mystery fees.</p>
+                        <h3 class="text-xl font-black mb-3 uppercase tracking-tight">Honest Diagnostics</h3>
+                        <p class="text-slate-500 text-sm">We show you the issue before we fix it. Absolutely no mystery fees or hidden costs.</p>
                     </div>
                 </div>
             </div>
@@ -99,31 +142,39 @@
     <section id="about" class="py-24 bg-blue-900 text-white rounded-[40px] mx-4 my-12 relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-8 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
             <div>
-                <h2 class="text-4xl font-black tracking-tight mb-8 uppercase italic leading-none">The Heights <br/><span class="text-red-500">Choice.</span></h2>
-                <p class="text-blue-100/70 mb-6 font-medium">Miguel and Ruben run an independent shop. That means we answer to you, not a corporate headquarters. We build our business on repeat trust.</p>
-                <p class="text-blue-100/70 font-medium italic font-bold">"No Mystery Fees. No Surprises."</p>
+                <h2 class="text-4xl font-black tracking-tight mb-8 uppercase italic leading-none text-red-500">Locally <br/>Owned.</h2>
+                <div class="space-y-6">
+                    <p class="text-blue-100/70 font-medium">Miguel and Ruben are independent owners. We don't answer to corporate headquarters; we answer to the people of Houston.</p>
+                    <div class="flex items-center gap-4 bg-white/5 p-6 rounded-2xl border border-white/10">
+                        <i class="fa-solid fa-handshake-angle text-3xl text-red-500"></i>
+                        <div>
+                            <p class="font-bold text-lg uppercase leading-none text-white">Transparency First</p>
+                            <p class="text-sm text-blue-100/50 mt-1">If your car doesn't need the repair, we won't sell it to you. That's our promise.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="aspect-square bg-white/10 rounded-[40px] overflow-hidden">
-                <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-80">
+            <div class="aspect-square bg-white/10 rounded-[40px] overflow-hidden shadow-2xl">
+                <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-80" alt="Interior of Heights Muffler Shop auto repair bay">
             </div>
         </div>
     </section>
 
     <section id="reviews" class="py-24 bg-slate-50">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="text-4xl font-black tracking-tight mb-16 text-center uppercase">Customer Voices</h2>
+            <h2 class="text-4xl font-black tracking-tight mb-16 text-center uppercase">Customer Reviews</h2>
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
-                    <p class="text-slate-600 italic mb-8 font-medium">"Best mechanic shop I've been to, they're super honest and nice!! Heights Muffler said no leak was found after another shop told me I had an engine leak."</p>
-                    <p class="font-black text-blue-900 uppercase">— Phoebe Mateos</p>
+                <div class="bg-white p-10 rounded-[30px] border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"Heights Muffler said no leak was found after another shop told me I had an engine leak. They're super honest!"</p>
+                    <p class="font-black text-blue-900 uppercase tracking-tighter">— Phoebe Mateos</p>
                 </div>
-                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
-                    <p class="text-slate-600 italic mb-8 font-medium">"Chopped out a previous owner's exhaust and welded a new stock one in for me in 15 minutes at a very reasonable price."</p>
-                    <p class="font-black text-blue-900 uppercase">— Tanner Bowersox</p>
+                <div class="bg-white p-10 rounded-[30px] border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"Chopped out a previous owner's exhaust and welded a new one in 15 minutes at a very reasonable price."</p>
+                    <p class="font-black text-blue-900 uppercase tracking-tighter">— Tanner Bowersox</p>
                 </div>
-                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
-                    <p class="text-slate-600 italic mb-8 font-medium">"Got heart-shaped exhaust tips welded on... the welds look clean and the price was better than expected."</p>
-                    <p class="font-black text-blue-900 uppercase">— Faith Mayorga</p>
+                <div class="bg-white p-10 rounded-[30px] border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"The welds look clean, the placement is perfect, and the price was better than expected."</p>
+                    <p class="font-black text-blue-900 uppercase tracking-tighter">— Faith Mayorga</p>
                 </div>
             </div>
         </div>
@@ -132,8 +183,8 @@
     <section id="contact" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
             <div class="bg-slate-50 p-10 rounded-[40px] border border-slate-200">
-                <h3 class="text-3xl font-black mb-2 uppercase">Quick Estimate</h3>
-                <p class="text-slate-500 mb-8 font-medium">Typical reply within the hour.</p>
+                <h3 class="text-3xl font-black mb-2 uppercase">Estimate Request</h3>
+                <p class="text-slate-500 mb-8 font-medium italic">Our Promise: No Mystery Fees. No Surprises.</p>
                 
                 <form id="estimateForm" action="https://script.google.com/macros/s/AKfycbwmH065_-cQ0TCFJNIKV1oZed7Tsolmd4XcVtGLerefIZItio61SLmb17F1iK_BUpWt/exec" method="POST" class="space-y-4">
                     <input type="hidden" name="site_name" value="The Heights Muffler Shop">
@@ -142,23 +193,24 @@
                         <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold">
                     </div>
                     <input type="text" name="car" placeholder="Car Make & Model" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold">
-                    <textarea name="message" placeholder="Tell us what you need..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold"></textarea>
+                    <textarea name="message" placeholder="Describe your exhaust or repair needs..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold"></textarea>
                     
                     <button type="submit" id="submitBtn" class="w-full bg-red-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-red-700 transition-all uppercase">Send Message</button>
-                    <p id="formFeedback" class="text-center text-green-600 font-bold hidden mt-4">Message sent! We'll call you soon.</p>
+                    <p id="formFeedback" class="text-center text-green-600 font-bold hidden mt-4">Message sent! Miguel or Ruben will call you soon.</p>
                 </form>
             </div>
 
             <div class="flex flex-col gap-6">
                 <div class="bg-blue-900 text-white p-10 rounded-[40px] shadow-2xl">
-                    <h3 class="text-3xl font-black mb-8 uppercase">Visit the Shop</h3>
+                    <h3 class="text-3xl font-black mb-8 uppercase">Shop Information</h3>
                     <div class="space-y-6">
                         <p class="font-bold text-xl uppercase tracking-tighter"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i> 742 W 18th St, Houston, TX 77008</p>
-                        <p class="font-bold text-xl uppercase tracking-tighter"><i class="fa-solid fa-clock text-red-500 mr-2"></i> Mon-Fri: 8AM - 5PM | Sat: 8AM - 1PM</p>
+                        <p class="font-bold text-xl uppercase tracking-tighter"><i class="fa-solid fa-clock text-red-500 mr-2"></i> Mon-Fri: 8AM-5PM | Sat: 8AM-1PM</p>
                     </div>
                 </div>
                 <div class="rounded-[40px] overflow-hidden border border-slate-300 h-64 grayscale hover:grayscale-0 transition-all">
                     <iframe 
+                        title="Google Maps Location for Heights Muffler Shop"
                         width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
                         src="https://maps.google.com/maps?q=742%20W%2018th%20St,%20Houston,%20TX%2077008&t=&z=15&ie=UTF8&iwloc=&output=embed">
                     </iframe>
@@ -168,7 +220,7 @@
     </section>
 
     <footer class="bg-white py-12 border-t border-slate-100 text-center">
-        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">© 2026 THE HEIGHTS MUFFLER SHOP. HOUSTON, TX.</p>
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">© 2026 THE HEIGHTS MUFFLER SHOP. HOUSTON, TX. LOCALLY OWNED.</p>
     </footer>
 
     <script>
