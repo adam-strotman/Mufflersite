@@ -6,67 +6,18 @@
     
     <title>The Heights Muffler Shop | Houston's Honest Exhaust & Inspection Experts</title>
     <meta name="description" content="Top-rated muffler shop at 742 W 18th St, Houston Heights. Specialized in exhaust repair, custom welding, and Texas State Inspections. Honest, family-owned service.">
-    <meta name="keywords" content="muffler shop Houston Heights, exhaust repair 77008, state inspections Houston 77008, custom exhaust welding, brake service Houston">
     
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "AutoRepair",
-      "name": "The Heights Muffler Shop",
-      "image": "https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98",
-      "url": "https://theheightsmufflershop.netlify.app",
-      "telephone": "+1-713-861-1222",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "742 W 18th St",
-        "addressLocality": "Houston",
-        "addressRegion": "TX",
-        "postalCode": "77008",
-        "addressCountry": "US"
-      }
-    }
-    </script>
-
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap');
-        
-        body {
-            font-family: 'Inter', sans-serif;
-            scroll-behavior: smooth;
-        }
-
-        .hero-gradient {
-            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
-        }
-
-        .marquee-container {
-            overflow: hidden;
-            white-space: nowrap;
-        }
-
-        .marquee-content {
-            display: inline-block;
-            animation: marquee 30s linear infinite;
-        }
-
-        @keyframes marquee {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        .sticky-nav {
-            transition: all 0.3s ease;
-        }
-
-        .sticky-nav.scrolled {
-            padding-top: 0.75rem;
-            padding-bottom: 0.75rem;
-            background-color: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(8px);
-            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
-        }
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%); }
+        .marquee-container { overflow: hidden; white-space: nowrap; }
+        .marquee-content { display: inline-block; animation: marquee 30s linear infinite; }
+        @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+        .sticky-nav { transition: all 0.3s ease; }
+        .sticky-nav.scrolled { padding-top: 0.75rem; padding-bottom: 0.75rem; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(8px); box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1); }
     </style>
 </head>
 <body class="bg-white text-slate-900">
@@ -74,15 +25,12 @@
     <nav id="navbar" class="fixed top-0 w-full z-50 sticky-nav py-5 px-6">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
             <div class="flex items-center gap-3">
-                <div class="bg-red-600 p-2 rounded shadow-md">
-                    <i class="fa-solid fa-wrench text-white text-xl"></i>
-                </div>
+                <div class="bg-red-600 p-2 rounded shadow-md"><i class="fa-solid fa-wrench text-white text-xl"></i></div>
                 <div class="flex flex-col">
-                    <span class="font-black text-lg md:text-xl leading-none tracking-tight uppercase text-slate-900">The Heights</span>
+                    <span class="font-black text-lg md:text-xl leading-none tracking-tight uppercase">The Heights</span>
                     <span class="font-bold text-[10px] md:text-xs text-red-600 tracking-widest leading-none uppercase">Muffler Shop</span>
                 </div>
             </div>
-
             <div class="flex items-center gap-4">
                 <div class="hidden lg:flex gap-8 mr-8 font-bold text-xs uppercase tracking-widest text-slate-600">
                     <a href="#services" class="hover:text-red-600 transition-colors">Services</a>
@@ -90,85 +38,92 @@
                     <a href="#reviews" class="hover:text-red-600 transition-colors">Reviews</a>
                     <a href="#contact" class="hover:text-red-600 transition-colors">Estimate</a>
                 </div>
-                <a href="tel:7138611222" class="bg-blue-900 text-white px-4 md:px-6 py-2.5 rounded-full font-black text-xs md:text-sm flex items-center gap-2 hover:bg-red-600 transition-all shadow-md active:scale-95">
-                    <i class="fa-solid fa-phone"></i>
-                    <span class="hidden sm:inline">(713) 861-1222</span>
-                    <span class="sm:hidden text-[10px]">CALL NOW</span>
+                <a href="tel:7138611222" class="bg-blue-900 text-white px-6 py-2.5 rounded-full font-black text-sm flex items-center gap-2 hover:bg-red-600 transition-all shadow-md">
+                    <i class="fa-solid fa-phone"></i> (713) 861-1222
                 </a>
             </div>
         </div>
     </nav>
 
     <section class="relative pt-32 pb-20 md:pt-48 md:pb-32 hero-gradient overflow-hidden">
-        <div class="absolute top-0 right-0 w-1/3 h-full bg-blue-900/5 -skew-x-12 translate-x-20"></div>
         <div class="max-w-7xl mx-auto px-6 relative z-10">
             <div class="max-w-3xl">
-                <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-4 py-1.5 rounded-full shadow-sm mb-6">
-                    <i class="fa-solid fa-star text-yellow-500 text-sm"></i>
-                    <span class="text-xs font-bold text-slate-600 uppercase tracking-wider">The Heights' Trusted Local Shop</span>
-                </div>
-                <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8 text-slate-900">
-                    Reliable Care. <br />
-                    <span class="text-red-600 italic">Honest Folks.</span>
-                </h1>
-                <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">
-                    Located on W 18th St, we are the neighborhood specialist for custom exhaust, certified inspections, and honest auto repair.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="#contact" class="bg-red-600 text-white text-center px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all shadow-xl shadow-red-600/20 uppercase tracking-tight">
-                        Get Free Estimate
-                    </a>
-                </div>
+                <h1 class="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-8">Reliable Care. <br /><span class="text-red-600 italic">Honest Folks.</span></h1>
+                <p class="text-xl text-slate-600 mb-10 leading-relaxed max-w-xl">Neighborhood specialists for custom exhaust, certified inspections, and honest auto repair on W 18th St.</p>
+                <a href="#contact" class="bg-red-600 text-white px-10 py-5 rounded-xl font-black text-lg hover:bg-red-700 transition-all uppercase">Get Free Estimate</a>
             </div>
         </div>
     </section>
 
     <div class="bg-slate-900 text-white py-4 marquee-container">
-        <div class="marquee-content flex gap-12 font-bold text-sm tracking-widest uppercase items-center">
-            <span><i class="fa-solid fa-coffee text-red-500 mr-2"></i> Free Coffee & WiFi</span>
-            <span><i class="fa-solid fa-shield-halved text-red-500 mr-2"></i> Texas Certified Inspections</span>
-            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Honest Pricing</span>
+        <div class="marquee-content flex gap-12 font-bold text-sm uppercase items-center">
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Texas Certified Inspections</span>
             <span><i class="fa-solid fa-heart text-red-500 mr-2"></i> Family Owned</span>
-            <span><i class="fa-solid fa-coffee text-red-500 mr-2"></i> Free Coffee & WiFi</span>
+            <span><i class="fa-solid fa-wrench text-red-500 mr-2"></i> Custom Welding</span>
+            <span><i class="fa-solid fa-check-circle text-red-500 mr-2"></i> Texas Certified Inspections</span>
         </div>
     </div>
 
- <section id="services" class="py-24 bg-white">
+    <section id="services" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6">
             <div class="grid lg:grid-cols-4 gap-8">
                 <div class="lg:col-span-1">
                     <h2 class="text-4xl font-black tracking-tight mb-4 uppercase leading-none">What We <br/><span class="text-red-600 italic">Offer</span></h2>
-                    <p class="text-slate-500 font-medium mb-8">Professional auto care with the equipment of a dealer and the heart of a local shop.</p>
                 </div>
                 <div class="lg:col-span-3 grid md:grid-cols-2 gap-6">
-                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
-                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
-                            <i class="fa-solid fa-gear text-3xl text-red-600"></i>
-                        </div>
-                        <h3 class="text-xl font-black mb-3 tracking-tight">Exhaust & Mufflers</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Custom welding, catalytic converters, and performance pipe bending.</p>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
+                        <i class="fa-solid fa-gear text-3xl text-red-600 mb-6 block"></i>
+                        <h3 class="text-xl font-black mb-3">Exhaust & Mufflers</h3>
+                        <p class="text-slate-500 text-sm">Custom welding, catalytic converters, and performance pipe bending.</p>
                     </div>
-                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
-                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
-                            <i class="fa-solid fa-clipboard-check text-3xl text-red-600"></i>
-                        </div>
-                        <h3 class="text-xl font-black mb-3 tracking-tight">State Inspections</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Official Emissions & Safety inspections. No appointment needed.</p>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
+                        <i class="fa-solid fa-clipboard-check text-3xl text-red-600 mb-6 block"></i>
+                        <h3 class="text-xl font-black mb-3">State Inspections</h3>
+                        <p class="text-slate-500 text-sm">Official Emissions & Safety inspections. No appointment needed.</p>
                     </div>
-                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
-                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
-                            <i class="fa-solid fa-car-burst text-3xl text-red-600"></i>
-                        </div>
-                        <h3 class="text-xl font-black mb-3 tracking-tight">Brakes & Maintenance</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">Full brake service and synthetic oil changes starting at dealer-beating rates.</p>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
+                        <i class="fa-solid fa-car-burst text-3xl text-red-600 mb-6 block"></i>
+                        <h3 class="text-xl font-black mb-3">Brakes & Maintenance</h3>
+                        <p class="text-slate-500 text-sm">Full brake service and synthetic oil changes at fair rates.</p>
                     </div>
-                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 hover:bg-white hover:shadow-xl transition-all group">
-                        <div class="mb-6 p-4 bg-white w-fit rounded-2xl shadow-sm group-hover:bg-red-50 transition-colors">
-                            <i class="fa-solid fa-magnifying-glass text-3xl text-red-600"></i>
-                        </div>
-                        <h3 class="text-xl font-black mb-3 tracking-tight">Honest Diagnostics</h3>
-                        <p class="text-slate-500 text-sm leading-relaxed">We show you the issue before we fix it. If we don't find a problem, we'll tell you.</p>
+                    <div class="p-8 rounded-3xl bg-slate-50 border border-slate-100 hover:border-red-200 transition-all">
+                        <i class="fa-solid fa-magnifying-glass text-3xl text-red-600 mb-6 block"></i>
+                        <h3 class="text-xl font-black mb-3">Honest Diagnostics</h3>
+                        <p class="text-slate-500 text-sm">We show you the issue before we fix it. No mystery fees.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-24 bg-blue-900 text-white rounded-[40px] mx-4 my-12 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-8 md:px-12 grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-4xl font-black tracking-tight mb-8 uppercase italic leading-none">The Heights <br/><span class="text-red-500">Choice.</span></h2>
+                <p class="text-blue-100/70 mb-6 font-medium">Miguel and Ruben run an independent shop. That means we answer to you, not a corporate headquarters. We build our business on repeat trust.</p>
+                <p class="text-blue-100/70 font-medium italic font-bold">"No Mystery Fees. No Surprises."</p>
+            </div>
+            <div class="aspect-square bg-white/10 rounded-[40px] overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1517524008697-84bbe3c3fd98?auto=format&fit=crop&q=80&w=800" class="w-full h-full object-cover opacity-80">
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-4xl font-black tracking-tight mb-16 text-center uppercase">Customer Voices</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"Best mechanic shop I've been to, they're super honest and nice!! Heights Muffler said no leak was found after another shop told me I had an engine leak."</p>
+                    <p class="font-black text-blue-900 uppercase">— Phoebe Mateos</p>
+                </div>
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"Chopped out a previous owner's exhaust and welded a new stock one in for me in 15 minutes at a very reasonable price."</p>
+                    <p class="font-black text-blue-900 uppercase">— Tanner Bowersox</p>
+                </div>
+                <div class="bg-white p-10 rounded-[30px] shadow-sm border border-slate-100">
+                    <p class="text-slate-600 italic mb-8 font-medium">"Got heart-shaped exhaust tips welded on... the welds look clean and the price was better than expected."</p>
+                    <p class="font-black text-blue-900 uppercase">— Faith Mayorga</p>
                 </div>
             </div>
         </div>
@@ -176,86 +131,67 @@
 
     <section id="contact" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-12">
-            <div class="bg-slate-50 p-10 rounded-[40px] border border-slate-200 shadow-inner">
-                <h3 class="text-3xl font-black mb-2 uppercase tracking-tight">Quick Estimate</h3>
-                <p class="text-slate-500 mb-8 font-medium italic">Typical reply within the hour.</p>
+            <div class="bg-slate-50 p-10 rounded-[40px] border border-slate-200">
+                <h3 class="text-3xl font-black mb-2 uppercase">Quick Estimate</h3>
+                <p class="text-slate-500 mb-8 font-medium">Typical reply within the hour.</p>
                 
                 <form id="estimateForm" action="https://script.google.com/macros/s/AKfycbwmH065_-cQ0TCFJNIKV1oZed7Tsolmd4XcVtGLerefIZItio61SLmb17F1iK_BUpWt/exec" method="POST" class="space-y-4">
+                    <input type="hidden" name="site_name" value="The Heights Muffler Shop">
                     <div class="grid md:grid-cols-2 gap-4">
-                        <input type="text" name="name" placeholder="Your Name" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
-                        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
+                        <input type="text" name="name" placeholder="Your Name" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold">
+                        <input type="tel" name="phone" placeholder="Phone Number" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold">
                     </div>
-                    <input type="text" name="car" placeholder="Car Make & Model" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold">
-                    <textarea name="message" placeholder="Tell us what you need..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-900 outline-none font-bold"></textarea>
+                    <input type="text" name="car" placeholder="Car Make & Model" required class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold">
+                    <textarea name="message" placeholder="Tell us what you need..." rows="4" class="w-full px-6 py-4 rounded-2xl bg-white border border-slate-200 outline-none font-bold"></textarea>
                     
-                    <button type="submit" id="submitBtn" class="w-full bg-red-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-red-700 transition-all uppercase tracking-tight">
-                        Send Message
-                    </button>
-                    <p id="formFeedback" class="text-center text-green-600 font-bold hidden mt-4">Message sent! Miguel or Ruben will call you soon.</p>
+                    <button type="submit" id="submitBtn" class="w-full bg-red-600 text-white py-5 rounded-2xl font-black text-lg hover:bg-red-700 transition-all uppercase">Send Message</button>
+                    <p id="formFeedback" class="text-center text-green-600 font-bold hidden mt-4">Message sent! We'll call you soon.</p>
                 </form>
             </div>
 
-            <div class="flex flex-col">
-                <div class="bg-blue-900 text-white p-10 rounded-[40px] flex-grow shadow-2xl">
-                    <h3 class="text-3xl font-black mb-8 uppercase tracking-tight">The Shop</h3>
-                    <div class="space-y-8">
-                        <div class="flex gap-6">
-                            <i class="fa-solid fa-location-dot text-red-500 text-2xl mt-1"></i>
-                            <div>
-                                <p class="font-bold text-xl uppercase tracking-tighter">Houston Heights</p>
-                                <p class="text-blue-100/60 font-medium">742 W 18th St<br/>Houston, TX 77008</p>
-                            </div>
-                        </div>
+            <div class="flex flex-col gap-6">
+                <div class="bg-blue-900 text-white p-10 rounded-[40px] shadow-2xl">
+                    <h3 class="text-3xl font-black mb-8 uppercase">Visit the Shop</h3>
+                    <div class="space-y-6">
+                        <p class="font-bold text-xl uppercase tracking-tighter"><i class="fa-solid fa-location-dot text-red-500 mr-2"></i> 742 W 18th St, Houston, TX 77008</p>
+                        <p class="font-bold text-xl uppercase tracking-tighter"><i class="fa-solid fa-clock text-red-500 mr-2"></i> Mon-Fri: 8AM - 5PM | Sat: 8AM - 1PM</p>
                     </div>
+                </div>
+                <div class="rounded-[40px] overflow-hidden border border-slate-300 h-64 grayscale hover:grayscale-0 transition-all">
+                    <iframe 
+                        width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" 
+                        src="https://maps.google.com/maps?q=742%20W%2018th%20St,%20Houston,%20TX%2077008&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                    </iframe>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-white py-12 border-t border-slate-100">
-        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8 text-center">
-            <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">
-                © 2026 LOCAL INDEPENDENT BUSINESS. HOUSTON, TX.
-            </p>
-        </div>
+    <footer class="bg-white py-12 border-t border-slate-100 text-center">
+        <p class="text-[10px] font-bold text-slate-400 uppercase tracking-[0.3em]">© 2026 THE HEIGHTS MUFFLER SHOP. HOUSTON, TX.</p>
     </footer>
 
     <script>
-        // Navbar scroll effect
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', () => {
             const nav = document.getElementById('navbar');
-            if (window.scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
+            window.scrollY > 50 ? nav.classList.add('scrolled') : nav.classList.remove('scrolled');
         });
 
-        // Form Logic
         const form = document.getElementById('estimateForm');
         const btn = document.getElementById('submitBtn');
         const feedback = document.getElementById('formFeedback');
 
-        form.addEventListener('submit', function(e) {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
-            
             btn.innerHTML = "Sending...";
             btn.disabled = true;
-
             const formData = new FormData(form);
-
-            fetch(form.action, {
-                method: 'POST',
-                body: new URLSearchParams(formData),
-                mode: 'no-cors' // Required for Google Apps Script to bypass CORS
-            })
+            fetch(form.action, { method: 'POST', body: new URLSearchParams(formData), mode: 'no-cors' })
             .then(() => {
                 feedback.classList.remove('hidden');
                 btn.innerHTML = "Sent!";
                 form.reset();
-            })
-            .catch(error => {
-                console.error('Error!', error.message);
+            }).catch(() => {
                 btn.innerHTML = "Error - Try Again";
                 btn.disabled = false;
             });
